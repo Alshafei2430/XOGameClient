@@ -1,5 +1,5 @@
-import { io } from 'socket.io-client';
+import { io } from "socket.io-client";
 
-const uri = import.meta.env.VITE_SERVER_URL || 'http://localhost:5000';
+const uri = import.meta.env.VITE_SERVER_URL;
 
 export const socket = io(uri);
